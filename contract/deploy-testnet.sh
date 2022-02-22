@@ -5,7 +5,7 @@
 
 rm -rf neardev .env
 
-near dev-deploy res/pitch_talk.wasm
+near dev-deploy res/contract.wasm
 source neardev/dev-account.env
 cat neardev/dev-account.env > .env
 

@@ -45,7 +45,7 @@ impl Contract {
         Contract { owner_id }
     }
 }
-
+#[near_bindgen]
 impl EventLogger for Contract {
     fn log_event(
         &mut self,
@@ -53,12 +53,14 @@ impl EventLogger for Contract {
         operation: String,
         transaction_hash: String
     ) {
+
         let event = EventLogEntry {
             time,
             operation,
             transaction_hash
         };
         event.emit();
+
     }
 }
 
