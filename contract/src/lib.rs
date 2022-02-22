@@ -54,6 +54,7 @@ impl EventLogger for Contract {
         transaction_hash: String
     ) {
 
+
         let event = EventLogEntry {
             time,
             operation,

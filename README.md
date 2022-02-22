@@ -11,5 +11,6 @@
 
 ### Call log_event function
 ```bash
-near call $CONTRACT_NAME log_event '{"time": 9929332, "operation": "min_nft","transaction_hash":"hash100220"}' --accountId deveus.testnet --amount --gas 6000000000000
+$signer=your_user
+near call $CONTRACT_NAME log_event '{"time": 9929332, "operation": "min_nft","transaction_hash":"hash100220"}' --accountId $signer --amount --gas 6000000000000
 ```
